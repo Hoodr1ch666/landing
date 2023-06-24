@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+}
+.header__wrapper {
+  display: flex;
+  gap: 60%;
+  padding: 0 20px;
+}
+.header__menu {
+  display: none;
+  position: absolute;
+}
+
+.hero__wrapper {
+  display: flex;
+}
+.hero__left-text {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.info__wrapper {
+  margin-top: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.info__buttons {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.info__buttons button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info__title {
+  text-align: left;
+  color: #121212;
+  font-size: 20px;
+  font-weight: 700;
+}
+.info__text {
+  text-align: left;
+  color: #121212;
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+.span__text {
+  color: #000;
+}
+
+.stage-1__title {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: left;
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+}
+.stage-1__subtitle {
+  text-align: left;
+  margin-bottom: 36px;
+  font-size: 19px;
+}
+.stage-1__images1 {
+  margin-bottom: 33px;
+}
+.stage-1__images2 {
+  margin-bottom: 25px;
+}
+.stage-1__text {
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+.stage-1__wrapper {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.stage-1__txt {
+  text-align-last: left;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.stage-1__text {
+  text-align: left;
+}
+
+.stage-2 img {
+  width: 100%;
+}
+.stage-2__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.stage-2__text {
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 19px;
+}
+
+.advanced__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.advanced__subtitle {
+  margin-top: 50px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+.advanced__images {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.advanced__images img {
+  width: 100%;
+}
+.advanced__subtext {
+  margin-top: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.advanced__texts {
+  margin-bottom: 20px;
+}
+
+.diabetes__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.diabetes__border {
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.diabetes__images {
+  margin-bottom: 30px;
+}
+.diabetes__images img {
+  width: 100%;
+}
+.diabetes__text-1 {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 19px;
+}
+.diabetes__text-2 {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 19px;
+}
+
+.reability__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.reability__images {
+  margin-bottom: 30px;
+  color: #727272;
+  font-size: 16px;
+  font-weight: 700;
+}
+.reability__images p {
+  margin-top: 20px;
+}
+.reability__images img {
+  width: 100%;
+}
+.reability__last-txt {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.reability__subtitle {
+  margin-bottom: 30px;
+}
+.reability__info {
+  margin-bottom: 30px;
+}
+.reability__txt {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.reability__item {
+  margin-bottom: 20px;
+}
+.reability__list {
+  margin-bottom: 30px;
+}
+
+.results__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.results__images {
+  margin-bottom: 30px;
+}
+.results__images img {
+  width: 100%;
+}
+.results__text {
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+.results__title {
+  margin-bottom: 50px;
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+}
+.results__38 {
+  margin-bottom: 20px;
+}
+.results__47 {
+  margin-bottom: 20px;
+}
+.results__all {
+  margin-bottom: 20px;
+}
+.results__last-text {
+  margin-bottom: 30px;
+}
+
+.second__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.second__melissa {
+  margin-bottom: 20px;
+}
+.second__images {
+  margin-bottom: 40px;
+}
+.second__images img {
+  width: 100%;
+}
+.second__ronda {
+  margin-bottom: 20px;
+}
+.second__last-text {
+  margin-bottom: 30px;
+}
+
+.clinical__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+.clinical__images {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.clinical__photo {
+  width: 100%;
+  display: flex;
+}
+.clinical__one-text {
+  color: #000;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.clinical__two-text {
+  margin-bottom: 30px;
+}
+.clinical__bold {
+  margin-top: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.clinical__btn {
+  display: inline-block;
+  color: #fff;
+  padding: 15px 50px;
+  background: #567b95;
+  box-shadow: 0px 4px 10px 0px #326891;
+}
+.clinical__button {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.clinical__last-text {
+  margin-bottom: 30px;
+}
+.clinical__do {
+  margin-bottom: 5px;
+}
+.clinical__link {
+  color: #326891;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  margin-bottom: 30px;
+}
+
+.comments__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.comments__text {
+  margin-bottom: 30px;
+}
+.comments__com-ac {
+  margin-bottom: 30px;
+}
+.comments__com-data {
+  margin-bottom: 10px;
+}
+.comments__link {
+  display: inline-block;
+  color: #fff;
+  padding: 15px 50px;
+  background: #567b95;
+  box-shadow: 0px 4px 10px 0px #326891;
+  margin-bottom: 50px;
+}
+.comments__btn {
+  text-align: center;
+}
+.comments__last-text {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.actions,
+.accordion:hover {
+  background-color: #fff;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+span {
+  font-weight: 700;
+}
+
+.footer__wrapper {
+  margin-bottom: 30px;
+}
+.footer__acardion {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__acardion button {
+  border-bottom: none;
+}
+.footer__panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.footer__panel p {
+  margin-bottom: 10px;
+  color: #000;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer__copy {
+  margin-bottom: 10px;
+  color: #666;
+  text-align: center;
+  font-size: 11px;
+  line-height: 11px;
+}
+.footer__copy-link {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  color: #666;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 20px;
+  margin: 0 auto;
+}
+.footer__aca {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stage-1__img1 {
+  width: 100%;
+}
+
+.stage-1__img2 {
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .header__wrapper {
+    gap: 10%;
+  }
+}
+@media (max-width: 960px) {
+  .header {
+    width: 100%;
+  }
+  .header__wrapper {
+    justify-content: space-between;
+  }
+  .hero__left-text {
+    margin-top: 40px;
+  }
+  .hero__wrapper {
+    flex-direction: column;
+  }
+  .hero__images {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .hero__images img {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    text-align: center;
+    padding: 0;
+  }
+  .container {
+    padding: 0;
+  }
+  .clinical__photo {
+    width: 100%;
+  }
+  .clinical__clins1 {
+    width: 100%;
+  }
+  .clinical__clins2 {
+    width: 100%;
+  }
+  .clinical__clins3 {
+    width: 100%;
+  }
+  .clinical__clins4 {
+    width: 100%;
+  }
+  .clinical__clins5 {
+    width: 100%;
+  }
+  .clinical__clins6 {
+    width: 100%;
+  }
+  .clinical__clins7 {
+    width: 100%;
+  }
+  .footer__images {
+    margin-top: 40px;
+  }
+  .footer__aca {
+    width: 100%;
+    text-align: left;
+  }
+  .footer__acardion {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__panel p {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) and (max-width: 400px) {
+  .header__wrapper {
+    gap: 5%;
+    justify-content: start;
+  }
+  .header__acocunt {
+    font-size: 0;
+    position: relative;
+  }
+  .header__acocunt::after {
+    position: absolute;
+    content: "";
+    background: url(../img/account.svg);
+    height: 16px;
+    width: 16px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  .icon-menu {
+    display: none;
+  }
+}
+@media (max-width: 600px) and (max-width: 1200px) {
+  .icon-menu {
+    right: 10px;
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+    z-index: 5;
+    background-color: #fff;
+    border: none;
+  }
+  .icon-menu span, .icon-menu::before, .icon-menu::after {
+    content: "";
+    transition: all 0.3s ease 0s;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+  }
+  .icon-menu::before {
+    top: 0px;
+  }
+  .icon-menu::after {
+    bottom: 0px;
+  }
+  .icon-menu span {
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu span {
+    transform: scale(0);
+  }
+  .menu-open .icon-menu::before {
+    transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu::after {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+}
