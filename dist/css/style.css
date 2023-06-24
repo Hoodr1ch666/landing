@@ -44,9 +44,30 @@ body {
   gap: 60%;
   padding: 0 20px;
 }
+.header__list {
+  display: block;
+  padding-left: 20px;
+}
+.header__item {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.header__item :hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 4px 0px 6px 1px;
+}
 .header__menu {
-  display: none;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 15%;
+  height: 100vh;
+  transition: all 0.4s ease 0s;
+  background-color: #fff;
+  padding: 50px 50px 50px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 0px 6px 1px;
+}
+.header__menu.active {
+  left: 0;
 }
 
 .hero__wrapper {
@@ -535,7 +556,7 @@ span {
     text-align: center;
   }
 }
-@media (max-width: 600px) and (max-width: 400px) {
+@media (max-width: 400px) {
   .header__wrapper {
     gap: 5%;
     justify-content: start;
@@ -555,12 +576,10 @@ span {
     background-repeat: no-repeat;
   }
 }
-@media (max-width: 600px) {
-  .icon-menu {
-    display: none;
-  }
+.icon-menu {
+  display: none;
 }
-@media (max-width: 600px) and (max-width: 1200px) {
+@media (max-width: 2000px) {
   .icon-menu {
     right: 10px;
     display: block;

@@ -44,10 +44,32 @@ body {
       gap: 60%;
       padding: 0 20px;
    }
-   &__menu {
-      display: none;
-      position: absolute;
-   }
+      &__list {
+         display: block;
+         padding-left: 20px;
+      }
+      &__item {
+         font-size: 20px;
+         margin-bottom: 25px;
+         :hover{
+            box-shadow: rgba(0, 0, 0, 0.3) 4px 0px 6px 1px;
+         }
+      }
+      &__menu {
+         position: fixed;
+         top: 0;
+         left: -100%;
+         width: 15%;
+         height: 100vh;
+         transition: all 0.4s ease 0s;
+         background-color: #fff;
+         padding: 50px 50px 50px 10px;
+         box-shadow: rgba(0, 0, 0, 0.1) 4px 0px 6px 1px;
+      }
+      &__menu.active {
+         left: 0;
+      }
+   
 }
 .hero {
    &__wrapper {
@@ -458,14 +480,14 @@ span {
       line-height: 20px;
       margin: 0 auto;
    }
-   &__aca{
+   &__aca {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
    }
 }
-.stage-1__img1{
+.stage-1__img1 {
    width: 100%;
 }
-.stage-1__img2{
+.stage-1__img2 {
    width: 100%;
 }
 @media (max-width: 1100px) {
@@ -533,10 +555,10 @@ span {
       }
    }
    .footer {
-      &__images{
+      &__images {
          margin-top: 40px;
       }
-      &__aca{
+      &__aca {
          width: 100%;
          text-align: left;
       }
@@ -550,73 +572,73 @@ span {
          }
       }
    }
-   @media (max-width: 400px) {
-      .header{
-         &__wrapper{
-            gap: 5%;
-            justify-content: start;
-         }
-         &__acocunt{
-            font-size: 0;
-            position: relative;
-            &::after{
-               position: absolute;
-               content: "";
-               background: url(../img/account.svg);
-               height: 16px;
-               width: 16px;
-               top: 0;
-               left: 0;
-               background-repeat: no-repeat;
-            }
+}
+@media (max-width: 400px) {
+   .header {
+      &__wrapper {
+         gap: 5%;
+         justify-content: start;
+      }
+      &__acocunt {
+         font-size: 0;
+         position: relative;
+         &::after {
+            position: absolute;
+            content: "";
+            background: url(../img/account.svg);
+            height: 16px;
+            width: 16px;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
          }
       }
    }
-   //menu burger
-   .icon-menu {
-      display: none;
-      @media (max-width: 1200px) {
-         right: 10px;
-         display: block;
-         position: relative;
-         width: 20px;
-         height: 10px;
-         cursor: pointer;
-         z-index: 5;
-         background-color: #fff;
-         border: none;
-         span,
-         &::before,
-         &::after {
-            content: "";
-            transition: all 0.3s ease 0s;
-            left: 0px;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: #333333;
+}
+//menu burger
+.icon-menu {
+   display: none;
+   @media (max-width: 2000px) {
+      right: 10px;
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 10px;
+      cursor: pointer;
+      z-index: 5;
+      background-color: #fff;
+      border: none;
+      span,
+      &::before,
+      &::after {
+         content: "";
+         transition: all 0.3s ease 0s;
+         left: 0px;
+         position: absolute;
+         width: 100%;
+         height: 2px;
+         background-color: #333333;
+      }
+      &::before {
+         top: 0px;
+      }
+      &::after {
+         bottom: 0px;
+      }
+      span {
+         top: calc(50% - 1px);
+      }
+      .menu-open & {
+         span {
+            transform: scale(0);
          }
          &::before {
-            top: 0px;
-         }
-         &::after {
-            bottom: 0px;
-         }
-         span {
+            transform: rotate(-45deg);
             top: calc(50% - 1px);
          }
-         .menu-open & {
-            span {
-               transform: scale(0);
-            }
-            &::before {
-               transform: rotate(-45deg);
-               top: calc(50% - 1px);
-            }
-            &::after {
-               transform: rotate(45deg);
-               bottom: calc(50% - 1px);
-            }
+         &::after {
+            transform: rotate(45deg);
+            bottom: calc(50% - 1px);
          }
       }
    }
